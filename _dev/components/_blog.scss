@@ -1,0 +1,118 @@
+.blog, .post-template-default{
+
+    .section-header{
+        width: 100%;
+    
+        h2{
+
+            &:before{
+                content: none;
+            }
+        }
+    }
+
+    .post-thumbnail{
+        
+        &:after, &:before{
+            background: none !important;
+        }
+        
+        .post-thumbnail-inner{
+            filter: none !important;
+        }
+    }
+    
+    .entry-footer{
+        max-width: 100%;
+        background: $azul;
+        color: $white;
+        padding: 10px 3px;
+        
+        a{
+            color: $white;
+        }
+    }
+}
+
+.post-template-default{
+    
+    .entry-content{
+        padding-top: 50px;
+        
+        h2{
+            margin-bottom: 50px;
+        }
+    }
+    
+    .post-navigation{
+        margin: 0 auto;
+        
+        .nav-links{
+            margin: 0;
+        }
+    }
+    
+    .comments-area{
+        margin: 80px 0 0 0;
+        max-width: 100%;
+        width:100%;
+        
+        .comments-title{
+            
+            &:before{
+                content: none !important;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .hentry .entry-content, .entry .entry-summary {
+        max-width: 80%;
+        margin: 0 10%;
+        padding: 0 60px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .hentry .entry-header {
+        margin: calc(3 * 1rem) calc(10% + 60px) calc(1rem / 2);
+    }
+}
+@media only screen and (min-width: 768px){
+    .hentry .entry-footer {
+        //margin: 1rem calc(10% + 60px) calc(3 * 1rem);
+        max-width: 100%;
+    }
+}
+
+.image-filters-enabled .hentry .post-thumbnail {
+    position: relative;
+    display: block;
+}
+
+@media only screen and (min-width: 768px){
+    .hentry .post-thumbnail {
+        //margin: 1rem calc(10% + 60px);
+    }
+}
+
+.hentry .entry-header{
+    padding: 1em 0;
+}
+.hentry .entry-title a {
+    color: inherit;
+    line-height: 120%;
+}
+
+.hentry .entry-meta > span, .hentry .entry-footer > span {
+    margin-right: 1rem;
+    display: inline-block;
+}
+.hentry .entry-content img{
+    margin-bottom: 20px;
+}
+.no-results{
+    width: 100%;
+}
+

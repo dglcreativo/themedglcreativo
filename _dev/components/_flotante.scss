@@ -1,0 +1,72 @@
+/* FLOTANTE */
+
+.boxext-reg {
+    background-color: $black80;
+    bottom: 0;
+    display: none;
+    left: 0;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    
+    .boxint-reg{
+        background: $white;
+        border-radius: 7px;
+        margin: 150px auto 0;
+        position: relative;
+        width: 90%;
+    }
+    
+    .boxcenter {
+        margin: 0 auto;
+        text-align: center;
+        padding: 1.5em;
+        
+        h2{
+            color: $azul;
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            font-size: 25px;
+            margin: 30px 0;
+            width: 100%;
+        }
+        
+        p{
+            margin-bottom: 20px;
+        }
+        
+        .cerrar{
+            position: absolute;
+            right: 10px;
+            top: 2px;
+            cursor: pointer;
+            
+            i{
+                color: $azul;
+            }
+        }
+    }
+    
+    .form{
+        width: 100%; 
+        margin:0 auto; 
+        padding-bottom: 30px; 
+        text-align: center;
+        
+        input[type="text"], input[type="password"] {
+            display: inline-block;
+            width: 75%;
+            padding: 15px 10px;
+            margin-bottom: 20px;
+            background: rgba(255,255,255,.8);
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 2px solid #7ac6bf;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+}

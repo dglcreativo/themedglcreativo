@@ -1,0 +1,28 @@
+/*
+Theme Name: DGL Creativo Proyectos
+Theme URI: http://dglcreativo.x10host.com
+Author: DGL Creativo
+Author URI: http://dglcreativo.x10host.com
+Description: Nuestro tema está diseñado para aprovechar al máximo la flexibilidad del editor de bloques. Las organizaciones y las empresas tienen la capacidad de crear páginas de destino dinámicas con diseños infinitos utilizando bloques de grupos y columnas. La columna de contenido centrada y la tipografía afinada también lo hacen perfecto para blogs tradicionales. Los estilos de editor completos le dan una buena idea de cómo se verá su contenido, incluso antes de publicarlo. Puede darle a su sitio un toque personal cambiando los colores de fondo y el color de acento en el Personalizador. Los colores de todos los elementos de su sitio se calculan automáticamente en función de los colores que elija, lo que garantiza un contraste de color alto y accesible para sus visitantes.
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: dglcreativo
+*/
+
+@import "../twentynineteen/style.css";
+
+@import "partials/_variables.scss";
+@import "partials/_commons.scss";
+
+@import "components/_header.scss";
+//@import "components/_slide.scss";
+@import "components/_flotante.scss";
+@import "components/_body.scss";
+@import "components/_footer.scss";
+@import "components/_works.scss";
+@import "components/_portfolio.scss";
+@import "components/_contact.scss";
+@import "components/_blog.scss";
+

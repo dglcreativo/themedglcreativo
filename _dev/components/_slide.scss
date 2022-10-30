@@ -1,0 +1,175 @@
+/* SLIDE */
+
+#top{
+    padding-top: 0;
+    overflow: hidden;
+    background: $azul20;
+    
+    @media (min-width: 992px){
+        padding-top: 130px;
+    }
+}
+
+.masthead-wrap {
+    -webkit-animation: fadeIn .5s ease-in-out;
+    -moz-transition: fadeIn .5s ease-in-out;
+    -o-transition: fadeIn .5s ease-in-out;
+    transition: fadeIn .5s ease-in-out;
+    
+    #title{
+        padding: .5em 0 0;
+        position: relative;
+        
+        .container{
+            position: relative;
+        }
+        
+        .sun{
+            position: absolute;
+            background: url(assets/images/sol.svg) top left no-repeat;
+            width: 150px;
+            height: 85px;
+            -webkit-transition: all 1s ease-in-out;
+            transition: all 1s ease-in-out;
+            z-index: 980;
+            
+            @media (max-width: 1100px){
+                width: 115px;
+                height: 65px;
+                background-size: 115px 65px;
+            }
+            
+            @media (max-width: 992px){
+                width: 75px;
+                height: 42.5px;
+                background-size: 75px 42.5px;
+            }
+        }
+        
+        .summer-sun{
+            left: 0em;
+            bottom: 0em;
+            
+            @media (max-width: 1100px){
+                left: 2em;
+                bottom: 3em;
+            }
+            
+            @media (max-width: 992px){
+                left: 6em;
+                bottom: 7em;
+            }
+        }
+        
+        .cloud{
+            position: absolute;
+            background: url(assets/images/nube.svg) top left no-repeat;
+            width: 150px;
+            height: 85px;
+            -webkit-transition: all 1s ease-in-out;
+            transition: all 1s ease-in-out;
+            z-index: 980;
+            
+            
+            @media (max-width: 992px){
+                width: 75px;
+                height: 42.5px;
+                background-size: 75px 42.5px;
+            }
+        }
+        
+        .left-cloud{
+            left: -6em;
+            bottom: 2em;
+            
+            @media (max-width: 992px){
+                left: 2em;
+                bottom: 5em;
+            }
+        }
+        
+        .right-cloud{
+            right: -5em;
+            top: 0;
+            
+            @media (max-width: 992px){
+                right: 2em;
+                top: 6em;
+            }
+        }
+    }
+    
+    #head-slider{
+        padding: 1em 0;
+        
+        @media (min-width: 992px){
+            padding: 0em 0;
+        }
+        
+        .name{
+            
+            figure {
+                max-width: 450px;
+                margin: 0 auto;
+                position: relative;
+                z-index: 990;
+                
+                @media (max-width: 991px) {
+                    max-width: 350px;
+                    margin: 100px auto 0;
+                }
+                
+                @media (max-width: 767px) {
+                    max-width: 260.5px;
+                }
+                
+                img{
+                    
+                    @media (max-width: 991px) {
+                        width: 100%;
+                    }
+                    
+                    @media (max-width: 767) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        
+        .header-desc{
+            text-align: center;
+            max-width: 780px;
+            margin: 40px auto 40px;
+            font: 300 23px/37px "Poppins", sans-serif;
+            letter-spacing: -0.2px;
+            color: $azul;
+            
+            @media (max-width: 1199px) {
+                font-size: 24px;
+                line-height: 36px;
+            }
+            
+            @media (max-width: 991px) {
+                font-size: 18px;
+                line-height: 26px;
+            }
+            
+            @media (max-width: 767px) {
+                font-size: 16px;
+                line-height: 24px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+    
+    #mountains {
+        margin: 0 auto;
+        max-width: 100%;
+        overflow: hidden;
+        
+        img{
+            width: 100%;
+        }
+    }
+}
+

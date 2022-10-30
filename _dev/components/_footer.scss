@@ -1,0 +1,119 @@
+/* FOOTER */
+
+footer{
+    background: $grisclaro;
+    text-align: center;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    
+    .nav {
+        
+        > li{
+            position: relative;
+            display: block;
+        }
+    }
+    
+    .social-links{
+        padding: 43px 0 36px;
+        border-bottom: 1px solid $grismedio;
+        
+        ul{
+            display: flex;
+            justify-content: center;
+            
+            li{
+                
+                + li{
+                    margin-left: 15px;
+                }
+                
+                a{
+                    background: $azul;
+                    color: $white;
+                    width: 48px;
+                    height: 48px;
+                    font-size: 22px;
+                    line-height: 52px;
+                    border-radius: 100%;
+                    padding: 0;
+                    
+                    &:hover, &:focus {
+                        background: $grisoscuro;
+                    }
+                }
+            }
+        }
+    }
+    
+    .menu-rights {
+        padding: 35px 0 15px 0;
+        
+        .footer-menu{
+            display: flex;
+            margin: 0 auto 19px;
+            
+            li{
+                color: $azul;
+                font: 300 15px/1 "Poppins", sans-serif;
+                
+                + li{
+                    
+                    &:before{
+                        content: '\2022';
+                        float: left;
+                        padding: 0 13px;
+                        line-height: 15px;
+                        display: block;
+                    }
+                }
+                
+                a{
+                    color: $azul;
+                    padding: 0;
+                    
+                    &:hover, &:focus{
+                        background: none;
+                        color: $grisoscuro;
+                    }
+                }
+            }
+        }
+    }
+    
+    .all-rights{
+        padding: 0 0 35px 0;
+        text-align: center;
+        
+        .copy{
+            margin: 0 auto;
+            font-size: 13px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    
+    footer{
+        
+        .menu-rights{
+        
+            .footer-menu{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+
+                li{
+                    margin-bottom: 10px;
+                    
+                    +li{
+
+                        &:before{
+                            content: '';
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

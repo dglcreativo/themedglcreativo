@@ -1,0 +1,405 @@
+/* HEADER */
+
+header {
+    background: $azul20;
+    /*padding: 1em 0;*/
+    
+    &.alt-bg{
+        
+        .navbar{
+            min-height: 55px;
+            background: none;
+            padding: 20px 0 24px;
+            margin: 0;
+            border: none;
+            box-shadow: none;
+            transition: all 300ms linear 0s;
+
+            .container{
+                justify-content: center;
+            }
+
+            .navbar-toggler, .navbar-toggler::after, .navbar-toggler::before{
+                content: "";
+                background: none;
+                border: none;
+
+            }
+            
+            .navbar-toggler{
+                transition-property: transform;
+                transition-duration: 0.15s;
+                transition-timing-function: ease;
+            }
+
+            &.is-scrolling{
+                padding: 20px 0;
+                background: $white95;
+                -webkit-box-shadow: 0 2px 42px $black10;
+                box-shadow: 0 2px 42px $black10;
+
+                #menu{
+                    padding-top: 0;
+                    height: 45px;
+                }
+
+                .navbar-brand{
+
+                    img{
+                        width: 50%;
+                    }
+                }
+
+                .nav{
+
+                    li{
+
+                        a{
+                            color: #8f969d;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .navbar-expand-lg{
+        
+            .nav{
+
+                > li{
+
+                    > a{
+                        color: $azul;
+                        
+                        &.active, &:hover{
+                            color: #333333;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .dark-logo{
+            display: none;
+        }
+
+        .is-scrolling{
+
+            .dark-logo{
+                display: block;
+            }
+
+            .white-logo{
+                display: none;
+
+            }
+        }
+    }
+    
+    .navbar-brand{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    
+    #menu{
+        justify-content: flex-end;
+        padding-top: 0px;
+        transition: all 300ms linear 0s;
+
+        .nav{
+            padding-right: 8px;
+            margin-right: 0;
+
+            li{
+
+                a{
+                    padding: 0 17px;
+                    text-transform: uppercase;
+                    font: 500 16px/40px "Poppins", sans-serif;
+                }
+            }
+        }
+    }    
+}
+
+.main-navigation {
+    margin-bottom: 0.25rem;
+    /*margin-top: 1.25rem;*/
+}
+
+header .invert #menu{
+    justify-content: flex-start;
+}
+
+header .invert .logo {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (max-width: 991px) {
+    
+    
+    
+    .navbar-expand-lg{
+        
+        .nav{
+
+            > li{
+                border-bottom: 1px solid $white;
+                
+                &:last-child{
+                    border-bottom: none;
+                }
+                
+                > a{
+                    color: $azul;
+
+                    &.active, &:hover{
+                        color: $white !important;
+                    }
+                }
+            }
+        }
+        
+        .navbar-collapse{
+            background: rgba(0, 0, 0, 0.64);
+            margin: 20px 10px 0 10px;
+            border-radius: 5px;
+        }
+    }
+    .pull-right{
+        display: none;
+    }
+    
+    header{
+        
+        &.alt-bg{
+            
+            .navbar{
+                
+                &.is-scrolling{
+                
+                    #menu{
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        
+        #menu{
+            
+            .nav{
+                padding-right: 0;
+            }
+        }
+        
+        .main-menu-more{
+            display: none;
+        }
+        
+    }
+    .main-navigation {
+        margin-top: 0rem;
+}
+    
+    
+    
+}
+
+/* OWL-CAROUSEL */
+
+.owl-carousel{
+    position : relative;
+    
+    .owl-carousel-img{
+        
+        height: 100%;
+        min-height: 100vh;
+        background-size: cover;
+        
+        .info-text-carousel{
+            color: $black;
+            padding: 0 50px;
+            
+            h1{
+                font-weight: 300;
+            }
+            
+            h6{
+                font-weight: 200;
+                font-size: 1rem;
+                line-height: 1.5;                
+            }
+        }
+    }
+    
+    .owl-nav{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 25px;
+    }
+    
+    button span{
+        font-size: 5rem;
+        color: $white;
+    }
+}
+
+.open .search_boxs {
+    top: 0;
+}
+
+.open .search_boxs:before {
+    -webkit-animation: menu-animation .8s ease-out forwards;
+    animation: menu-animation .8s ease-out forwards;
+    height: 100%
+}
+
+.open .search_boxs .close_icon {
+    -webkit-transition-delay: .75s;
+    -o-transition-delay: .75s;
+    transition-delay: .75s;
+    opacity: 1
+}
+
+.open .search_boxs .input-group {
+    width: 100%;
+    opacity: 1
+}
+
+.search_boxs,.search_boxs .close_icon {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+.search_boxs {
+    z-index: 20000;
+    position: fixed;
+    top: -105%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    overflow: hidden
+}
+
+.search_boxs:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: rgba(27,29,34,.90);
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    // border-radius: 100%;
+    -webkit-transform: scale(.04),translateY(9999px);
+    -ms-transform: scale(.04),translateY(9999px);
+    transform: scale(.04),translateY(9999px);
+    overflow: hidden
+}
+
+.search_boxs .close_icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    transition: transform .2s ease-out,opacity .2s ease-out,-webkit-transform .2s ease-out;
+    opacity: 0
+}
+
+.search_boxs .input-group {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: scale(.5);
+    -ms-transform: scale(.5);
+    transform: scale(.5);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    max-width: 800px;
+    width: 20%;
+    opacity: 0;
+    -webkit-transition: all 900ms linear;
+    -o-transition: all 900ms linear;
+    transition: all 900ms linear;
+    -webkit-transition-delay: .75s;
+    -o-transition-delay: .75s;
+    transition-delay: .75s
+}
+
+.search_boxs .input-group input {
+    border: 0;
+    height: 55px;
+    font-size: 16px;
+    padding: 0 15px 0 0;
+    width: 100%;
+    color: #fff;
+    background: 0 0;
+    border-bottom: 2px solid rgba(255,255,255,.6);
+    border-radius: 0;
+    outline: 0
+}
+
+.search_boxs .input-group input.placeholder {
+    font-size: 16px;
+    color: rgba(255,255,255,.6)
+}
+
+.search_boxs .input-group input:-moz-placeholder,.search_boxs .input-group input::-moz-placeholder {
+    font-size: 16px;
+    color: rgba(255,255,255,.6)
+}
+
+.search_boxs .input-group input::-webkit-input-placeholder {
+    font-size: 16px;
+    color: rgba(255,255,255,.6)
+}
+
+.search_boxs .input-group .input-group-append {
+    margin-left: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 4
+}
+
+.search_boxs .input-group .input-group-append button {
+    border: 0;
+    background: 0 0;
+    border-radius: 0;
+    height: 55px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    color: rgba(255,255,255,.6);
+    font-size: 24px;
+    padding: 0;
+    font-family: "Poppins",sans-serif;
+    outline: 0!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    cursor: pointer
+}
+
+.search_boxs .input-group .input-group-append button i {
+    cursor: pointer
+}
+
+.search-btn{
+    font-size: 16px;
+}

@@ -1,0 +1,31 @@
+/* WORKS */
+
+.white{
+    color: $white !important;
+}
+
+#envioacasa{
+    background: #75d163;
+    
+    p{
+        color: $black;
+        margin-top: 20px;
+    }
+}
+#benavente{
+    background: #9c3769;
+    
+    p{
+        color: $white;
+        margin-top: 20px;
+    }
+}
+#debla{
+    background: #009ee3;
+    
+    p{
+        color: $white;
+        margin-top: 20px;
+    }
+}
+
