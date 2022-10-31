@@ -4,6 +4,8 @@ $opt = get_option('dgl_opt');
 $is_search = !empty($opt['is_search']) ? $opt['is_search'] : '';
 $icon_classes = ( $is_search == '1' ) ? 'search_exist' : '';
 
+$col_search = ($is_search == '1') ? 'col-12 col-md-8' : 'col-12 col-md-9';
+
 ?>
 
 <header class="alt-bg" id="header">
@@ -16,12 +18,12 @@ $icon_classes = ( $is_search == '1' ) ? 'search_exist' : '';
                 </div>
             </div>
             
-            <div class="col-12 col-md-9">
+            <div class="<?php echo esc_attr($col_search) ?>">
                 <?php get_template_part('partials/navbar'); ?>
             </div>
 
             <?php if($opt['is_search'] == '1') : ?>
-            
+            <div class="col-12 col-md-1">
                 <div class="alter_nav <?php echo esc_attr($icon_classes) ?>">
                     <ul class="navbar-nav search_cart menu">
                     <?php if ( $is_search == '1' ) : ?>
@@ -33,7 +35,7 @@ $icon_classes = ( $is_search == '1' ) ? 'search_exist' : '';
                     <?php endif; ?>
                     </ul>
                 </div>
-            
+            </div>
             <?php else : 
 
             endif; ?>
