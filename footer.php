@@ -40,7 +40,7 @@ $is_search = !empty($opt['is_search']) ? $opt['is_search'] : '';
                         DGL Creativo <?php echo date('Y') ?>. Todos los derechos reservados
                         
 			<?php if ( has_nav_menu( 'footer' ) ) : ?>
-				<nav class="footer-navigation" aria-label="<?php esc_attr_e( 'Footer Menu', 'twentynineteen' ); ?>">
+				<nav class="footer-navigation" aria-label="<?php esc_attr_e( 'Footer Menu', 'dglcreativo' ); ?>">
 					<?php
 					wp_nav_menu(
 						array(
