@@ -19,7 +19,7 @@ $layout = $layout_header = '3' ? 'invert': '';
             <?php if($opt['is_search'] == '1') : ?>
             <div class="col-12 col-md-1">
                 <div class="alter_nav <?php echo esc_attr($icon_classes) ?>">
-                    <ul class="navbar-nav search_cart menu">
+                    <ul class="navbar-nav">
                     <?php if ( $is_search == '1' ) : ?>
                         <li class="nav-item search text-right">
                             <a class="nav-link search-btn" href="javascript:void(0);">

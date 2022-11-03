@@ -1333,6 +1333,7 @@
 
 @media (min-width: 1280px) {
     .h-links .h-links-navbar-main .h-links-navbar-collapse {
+        margin-top: 10px;
         overflow:visible
     }
 }
@@ -1395,7 +1396,7 @@
 @media (min-width: 1280px) {
     .h-links .h-links-navbar-main .h-links-navbarDropdown-toggle[aria-expanded="true"] span::before,.h-links .h-links-navbar-main .h-links-navbarDropdown-toggle:hover span::before {
         position:absolute;
-        bottom: -12px;
+        bottom: -3px;
         left: 0;
         display: block;
         width: 100%;
