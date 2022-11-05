@@ -80,7 +80,7 @@ if($the_query->have_posts()){
                                                         </div>
                                                         <?php } ?>
                                                         <div class="<?php echo esc_attr($coltext) ?>">
-                                                            <p><a href="<?php echo get_sub_field('url_sub_seccion'); ?>"><?php echo get_sub_field('titulo_sub_seccion'); ?></a></p>
+                                                            <p><a href="<?php echo get_sub_field('url_sub_seccion'); ?>" target="_blank"><?php echo get_sub_field('titulo_sub_seccion'); ?></a></p>
                                                             <p style="font-size: 1em;"><?php echo get_sub_field('descripcion_sub_seccion'); ?></p>
                                                         </div>
                                                     </div>

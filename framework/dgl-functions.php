@@ -239,7 +239,7 @@ endif;
 //Buscar solamente en los post
 function dgl_searchengine($query) {
   if ($query->is_search && !is_admin()) {
-    $query->set('post_type', array('post'));
+    $query->set('post_type', array('portfolio'));
   }
   return $query;
 }

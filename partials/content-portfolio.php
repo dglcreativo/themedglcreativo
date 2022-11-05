@@ -12,6 +12,7 @@ $nboton = get_field('pf-nombre-boton');
 $eboton = get_field('pf-enlace-boton');
 $color = get_field('pf-color-fondo');
 $urlLink = get_the_permalink();
+$view_more = 'Ver Más'
 ?>
 
 
@@ -23,7 +24,7 @@ $urlLink = get_the_permalink();
         </figure>
         <p class="white"><?php echo $title;?></p>
         <p class="white"><?php echo $descripcion;?></p>
-        <a href="<?php echo $eboton; ?>" class="btn btn-warning"><?php echo $nboton; ?></a>
+        <a href="<?php echo $urlLink; ?>" class="btn btn-warning"><?php echo $view_more; ?></a>
     </div>
 </div>
 </section>
