@@ -60,13 +60,15 @@ $opt = get_option('dgl_opt');
             <?php 
             $is_link_header = function_exists( 'get_field' ) ? get_field( 'is_link_header' ) : '1';
             $is_link_header = isset($is_link_header) ? $is_link_header : '1';
-
+            
+            if(!is_404()):
             if($is_link_header == '1'){
             ?>
-            <div class="linkheader">
+            <div class="linkheader mb-4">
                 <?php get_template_part('partials/otheroption'); ?>
             </div>
-            <?php } ?>
+            <?php } 
+            endif;?>
 
         </section>
 

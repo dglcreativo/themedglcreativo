@@ -111,7 +111,10 @@ if(!class_exists('Dgl')){
             } elseif ( is_search() ) {
                 esc_html_e( 'Resultados de la busqueda por: “', 'dglcreativo' );
                 echo get_search_query() . '”';
-            } else {
+            } elseif(is_404()) {
+                esc_html_e('Error 404', 'dglcreativo');
+            }
+                else {
                 the_title();
             }
             
