@@ -64,7 +64,7 @@ $opt = get_option('dgl_opt');
             if(!is_404()):
             if($is_link_header == '1'){
             ?>
-            <div class="linkheader mb-4">
+            <div class="linkheader">
                 <?php get_template_part('partials/otheroption'); ?>
             </div>
             <?php } 
