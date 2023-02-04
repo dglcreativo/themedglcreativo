@@ -5,7 +5,7 @@ get_header();
 $args = array(
     'post_type' => 'tutorial', 
 );
-$urlLink = get_the_permalink();
+
 $the_query= new WP_Query($args);
 if($the_query->have_posts()){
     $the_query->the_post(); 
@@ -22,7 +22,9 @@ if($the_query->have_posts()){
                     <a href="<?php the_permalink() ?>">
                         <?php dgl_post_thumbnail( 'blog', array( 'class' => 'img-fluid')) ?>
                     </a>
-                    <a href="<?php echo $urlLink; ?>"><?php echo the_title(); ?></a>
+                    <div class="mt-3">
+                        <a href="<?php the_permalink() ?>"><?php echo the_title(); ?></a>
+                    </div>
                 </div>
             </div>
             <?php endwhile;    wp_reset_postdata();?>
